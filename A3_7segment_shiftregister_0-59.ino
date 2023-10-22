@@ -33,7 +33,7 @@ void loop() {
       shiftOut(dataPin, clockPin, MSBFIRST, dataArray[tens]);
       digitalWrite(latchPin, HIGH);
       digitalWrite(anodePins[0], HIGH);
-      delay(1);  // Delay for 50 milliseconds
+      delay(1);  // Delay for 1 milliseconds
 
       // Turn off the tens place
       digitalWrite(anodePins[0], LOW);
@@ -43,7 +43,7 @@ void loop() {
       shiftOut(dataPin, clockPin, MSBFIRST, dataArray[ones]);
       digitalWrite(latchPin, HIGH);
       digitalWrite(anodePins[1], HIGH);
-      delay(1);  // Delay for 50 milliseconds
+      delay(1);  // Delay for 1 milliseconds
 
       // Turn off the ones place
       digitalWrite(anodePins[1], LOW);
